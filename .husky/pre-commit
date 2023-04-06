@@ -1,0 +1,2 @@
+echo 'Here is ./husky/pre-commit !'
+python hello_husky.py
