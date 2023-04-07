@@ -7,13 +7,12 @@ from github import Github
 
 
 def get_github_repo(access_token, repository_name):
-    g = Github(access_token)
-    return g.get_user().get_repo(repository_name)
+    github = Github(access_token)
+    return github.get_user().get_repo(repository_name)
 
 
 def upload_github_issue(repo, title, body):
     repo.create_issue(title=title, body=body)
-
 
 
 if __name__ == "__main__":
@@ -26,8 +25,8 @@ if __name__ == "__main__":
 
     # Upload GitHub issue
     today = datetime.now(timezone('Asia/Seoul'))
-    title = f"Issue of {today.strftime("%Y-%m-%d일")}"
-    content = f"Today is {today.strftime("%Y-%m-%d일")}. Have a good day."
+    title = f"Issue of {today.strftime('%Y-%m-%d일')}"
+    content = f"Today is {today.strftime('%Y-%m-%d일')}. Have a good day."
     repo.create_issue(title, content)
 
     print("Done.")
