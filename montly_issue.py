@@ -25,8 +25,10 @@ if __name__ == "__main__":
 
     # Upload GitHub issue
     today = datetime.now(timezone('Asia/Seoul'))
-    title = f"Issue of {today.strftime('%Y-%m-%d일')}"
-    content = f"Today is {today.strftime('%Y-%m-%d일')}. Have a good day."
+    title = f"Issue of {today.strftime('%Y-%m-%d')}"
+    content = f"[This issue is created by github action]"
+    content += f"Today is {today.strftime('%Y-%m-%d')}."
+    content += f"Have a good day."
     repo.create_issue(title, content)
 
     print("Done.")
