@@ -1,2 +1,6 @@
 echo 'Here is ./husky/pre-commit !'
 python hello_husky.py
+
+# brew install pre-commit
+# pre-commit sample-config > .pre-commit-config.yaml
+pre-commit run

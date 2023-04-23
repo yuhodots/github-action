@@ -40,10 +40,21 @@
 
 ## Husky
 
-> 공식 문서: [Husky](https://typicode.github.io/husky/#/) 
+> 공식 문서: [Husky](https://typicode.github.io/husky/#/)
 
 1. `npm install --save-dev husky`: Install
 2. `npx husky install`: Enable Git hooks
 3. `npm pkg set scripts.prepare="husky install"`: Modify package.json for handling git hooks automatically
 4. `npx husky add .husky/pre-commit "{do_something}"`: Git hooks 생성
 5. `git add .husky/pre-commit`
+
+### pre-commit
+
+> 공식 문서: https://pre-commit.com
+
+- 사용 가능한 pre-commit hooks 들은 [이곳](https://pre-commit.com/hooks.html)에서 확인 가능함
+
+1. `brew install pre-commit`: Install
+2. `pre-commit sample-config > .pre-commit-config.yaml`: Create a config file
+3. `pre-commit run`: 수동으로 pre-commit 실행하기
+4. **`pre-commit install`**: commit 할 때 자동으로 pre-commit가 실행되도록 git hook에 등록
