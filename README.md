@@ -48,7 +48,7 @@
 4. `npx husky add .husky/pre-commit "{do_something}"`: Git hooks 생성
 5. `git add .husky/pre-commit`
 
-### pre-commit
+## pre-commit
 
 > 공식 문서: https://pre-commit.com
 
