@@ -1,7 +1,7 @@
 # github-action
 > Simple examples of github actions and git hooks
 
-- [개인 블로그](https://yuhodots.github.io/cheatsheet/22-08-26/)에도 내용이 정리되어있습니다.
+- [개인 블로그](https://yuhodots.github.io/mlops/22-08-26/)에도 내용이 정리되어있습니다.
 
 ## GitHub Actions
 
